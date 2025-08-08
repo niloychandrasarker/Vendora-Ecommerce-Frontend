@@ -24,9 +24,11 @@ const Navbar = () => {
         <div className="flex justify-between items-center px-5 lg:px-20 h-[70px] border-b">
           <div className="flex items-center gap-9">
             <div className="flex items-center gap-2 ">
-              <IconButton>
-                <MenuIcon />
-              </IconButton>
+              {!islarge && (
+                <IconButton>
+                  <MenuIcon />
+                </IconButton>
+              )}
               <div className="flex items-center gap-2 cursor-pointer">
                 <h1 className="logo text-lg md:text-3xl text-primary-color font-semibold">
                   Vendora
