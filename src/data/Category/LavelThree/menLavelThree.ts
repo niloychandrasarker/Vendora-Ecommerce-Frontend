@@ -260,4 +260,78 @@ export const menLevelThree = [
     parentCategoryName: "Personal Care And Grooming",
     parentCategoryId: "men_persional_care_and_grooming",
   },
+
+  // Accessories
+  {
+    name: "Wallets",
+    categoryId: "men_wallets",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Belts",
+    categoryId: "men_belts",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Perfumes & Body Mists",
+    categoryId: "men_perfumes_body_mists",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Trimmers",
+    categoryId: "men_trimmers",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Deodorants",
+    categoryId: "men_deodorants",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Ties, Cufflinks & Pocket Squares",
+    categoryId: "men_ties_cufflinks_pocket_squares",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Accessory Gift Sets",
+    categoryId: "men_accessory_gift_sets",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Caps & Hats",
+    categoryId: "men_caps_hats",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Mufflers, Scarves & Gloves",
+    categoryId: "men_mufflers_scarves_gloves",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Phone Cases",
+    categoryId: "men_phone_cases",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Rings & Wristwear",
+    categoryId: "men_rings_wristwear",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
+  {
+    name: "Helmets",
+    categoryId: "men_helmets",
+    parentCategoryName: "Accessories",
+    parentCategoryId: "men_accessories",
+  },
 ];

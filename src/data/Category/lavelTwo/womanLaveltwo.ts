@@ -29,4 +29,28 @@ export const womenLevelTwo = [
     parentCategoryId: "women",
     level: 2,
   },
+  {
+    name: "Beauty & Personal Care",
+    categoryId: "women_beauty_and_personal_care",
+    parentCategoryId: "women",
+    level: 2,
+  },
+  {
+    name: "Gadgets",
+    categoryId: "women_gadgets",
+    parentCategoryId: "women",
+    level: 2,
+  },
+  {
+    name: "Jewellery",
+    categoryId: "women_jewellery",
+    parentCategoryId: "women",
+    level: 2,
+  },
+  {
+    name: "Handbags, Bags & Wallets",
+    categoryId: "women_handbags_bags_and_wallets",
+    parentCategoryId: "women",
+    level: 2,
+  },
 ];

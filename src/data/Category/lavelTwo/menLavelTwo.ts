@@ -31,14 +31,9 @@ export const menLevelTwo = [
   },
   {
     name: "Personal Care & Grooming",
-    categoryId: "men_personal_care_and_grooming",
+    categoryId: "men_persional_care_and_grooming",
     parentCategoryId: "men",
     level: 2,
   },
-  {
-    name: "Watches",
-    categoryId: "men_watches",
-    parentCategoryId: "men",
-    level: 2,
-  },
+
 ];

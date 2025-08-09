@@ -14,13 +14,21 @@ import {
   FavoriteBorder,
   Storefront,
 } from "@mui/icons-material";
+import CategorySheet from "./CategorySheet";
+import { mainCategory } from "../../../data/Category/MainCategory";
+import { useState } from "react";
 
 const Navbar = () => {
   const theme = useTheme();
   const islarge = useMediaQuery(theme.breakpoints.up("lg"));
+  const [selectedCategory, setSelectedCategory] = useState("men");
+  const [showCategorySheet, setShowCategorySheet] = useState(false);
   return (
     <>
-      <Box>
+      <Box
+        sx={{ zIndex: 2 }}
+        className=" sticky top-0 left-0 right-0 bg-white "
+      >
         <div className="flex justify-between items-center px-5 lg:px-20 h-[70px] border-b">
           <div className="flex items-center gap-9">
             <div className="flex items-center gap-2 ">
@@ -36,13 +44,20 @@ const Navbar = () => {
               </div>
 
               <ul className="flex items-center font-medium text-gray-800">
-                {["Men", "Women", "Home & Furniture", "Electronics"].map(
-                  (item) => (
-                    <li className="mainCategory hover:text-primary-color hover:border-b-2 h-[70px] px-4 border-primary-color flex items-center">
-                      {item}
-                    </li>
-                  )
-                )}
+                {mainCategory.map((item) => (
+                  <li
+                    onMouseLeave={() => {
+                      setShowCategorySheet(false);
+                    }}
+                    onMouseEnter={() => {
+                      setShowCategorySheet(true);
+                      setSelectedCategory(item.categoryId);
+                    }}
+                    className="mainCategory hover:text-primary-color hover:border-b-2 h-[70px] px-4 border-primary-color flex items-center"
+                  >
+                    {item.name}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -85,6 +100,16 @@ const Navbar = () => {
             )}
           </div>
         </div>
+
+        {showCategorySheet && (
+          <div
+            onMouseLeave={() => setShowCategorySheet(false)}
+            onMouseEnter={() => setShowCategorySheet(true)}
+            className="categorySheet absolute top-[4.41rem] left-20 right-20 border"
+          >
+            <CategorySheet selectedCategory={selectedCategory} />
+          </div>
+        )}
       </Box>
     </>
   );
